@@ -1,17 +1,17 @@
 import { Link } from "gatsby"
 import React from "react"
-import Head from "../components/head"
+import Layout from "../components/Layout"
 
 const IndexPage = () => {
   return (
     <main>
       <title>Home Page</title>
       
-      <Head />
-        
-      <h1>Home page</h1>
+      <Layout>  
+        <h1>Home page</h1>
+      </Layout>
     </main>
-  )
-}
+  );
+};
 
 export default IndexPage

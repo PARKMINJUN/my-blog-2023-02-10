@@ -1,15 +1,15 @@
 import React from "react";
-import Head from "../components/head";
+import Layout from "../components/Layout";
 
 function AboutPage() {
     return (
         <main>
-        <title>자기소개</title>
-        
-        <Head />
-        
-        <h1>자기소개 페이지 입니다.</h1>
-    </main>
+            <title>About Page</title>
+            
+            <Layout>  
+                <h1>About Page</h1>
+            </Layout>
+        </main>
     );
 }
 
