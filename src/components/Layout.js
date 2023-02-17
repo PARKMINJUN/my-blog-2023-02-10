@@ -7,6 +7,7 @@ import {
   navLinks, 
   navLinkItem, 
   navLinkText,
+  siteTitle,
 } from "./Layout.module.css";
 
 function Layout({ pageTitle , children }) {
@@ -24,7 +25,7 @@ function Layout({ pageTitle , children }) {
   return (
       <div className={container}>
         <title>{pageTitle} | {data.site.siteMetadata.title}}</title>
-        <header>{data.site.siteMetadata.title}</header>
+        <header className = {siteTitle}>{data.site.siteMetadata.title}</header>
         <div>{data.site.siteMetadata.description}</div>
         <nav>
           <ul className={navLinks}>
